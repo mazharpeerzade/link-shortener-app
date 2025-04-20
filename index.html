@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ChopURL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h2 class="logo">ChopURL</h2>
+      <div class="auth-buttons">
+        <a href="#" class="login">Login</a>
+        <button class="signup">Sign Up</button>
+      </div>
+    </header>
+
+    <main>
+      <h1>Shorten your link</h1>
+      <input type="text" id="urlInput" placeholder="Paste your long URL here">
+      <input type="text" id="aliasInput" placeholder="Custom.alias (optional)">
+      
+      <div class="btn-group">
+        <button onclick="shortenURL()">Shorten URL</button>
+        <button onclick="generateQRCode()">Generate QR Code</button>
+      </div>
+
+      <div id="resultSection">
+        <p id="shortenedLink">chopurl.com/abcd123</p>
+        <button class="copy-btn" onclick="copyLink()">Copy</button>
+        <div id="qrcode"></div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
